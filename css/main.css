@@ -1,0 +1,101 @@
+html, body {
+  font-family: 'Arial', sans-serif;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background-color: #F0F0F0;
+  box-shadow: 0 0 10px #575757;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px  50px 0;
+}
+h1 {
+  font-size: 1.1rem;
+}
+
+header button {
+  background-color: #1a87e5;
+  outline: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 0;
+}
+
+.search-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-search {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png");
+  background-size: auto 95%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin: 0 8px;
+}
+
+.search-line input {
+  height: 20px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.display-month {
+  display: inline-block;
+  width: 150px;
+}
+
+.month-selection {
+  margin: 20px 50px;
+}
+.month-selection *{
+  margin: 0 8px;
+}
+
+button {
+  border: 0;
+  height: 25px;
+}
+
+.calendar {
+  margin: 0 60px;
+}
+
+.days-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.days-month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.week-item, .item {
+  text-align: left;
+  border: 1px solid black;
+  min-width: 100px;
+  height: 110px;
+  padding: 5px;
+  overflow: hidden;
+}
+.week-item {
+  background-color: #dde9db;
+}
+
+.days-month, .days-week {
+  max-width: 100%;
+  max-height: 100%;
+}
